@@ -1,247 +1,173 @@
-html {
-	background-color: white;
-	box-sizing: border-box;
+html{
+box-sizing: border-box;
+font-family: Merriweather, serif;
 }
-
-*, *::before, *::after {
-	box-sizing: inherit;
+*, *::before, *::after{
+box-sizing: inherit;
 }
-
+.grain-left {
+width:7%;
+float: left;
+}
+.grain-right {
+width: 7%;
+float: right;
+}
+h1 {
+text-align: center;
+margin: 0;
+color: white;
+padding-bottom: .5em;
+}
+main {
+line-height: 1.25em;
+}
+.p-1, .p-2{
+margin: .6em;
+}
+.p-2 {clear: left;
+}
+nav li {
+float: left;
+display: inline-block;
+width: 33.3%;
+border: 1px solid #a63f37;
+border-right: 0px;
+padding: .5em;
+text-align: center;
+}
+.inset-left {
+width: 31%;
+float: left;
+margin: 0 7px;
+clear: left;
+border: 1px solid #cccccc;
+}
+Header {
+background-color: #cd5b34;
+padding-top: .5em;
+overflow: hidden;
+margin: -1px;
+}
 body {
-line-height: 115%;
 margin: 0;
 }
-
-header {
-	background-color: #cd5b34;
-	padding: 0;
-	text-align: center;
-	margin: 0;
+a{
+text-decoration: none;
+color: white;
 }
 
-.grain-left {
-	width: 10%;
-	float: left;
-	padding: 0.5em 0em 0em 0em;
+
+nav ol{
+overflow: hidden;
+margin: auto;
+width: 100%;
+padding: 0;
 }
 
-.grain-right {
-	width: 10%;
-	float: right;
-	padding: 0.5em 0em 0em 0em;
+nav li:hover{
+background-color: #a63f37;
 }
-
-h1 {
-	background-color: #cd5b34;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	margin: 0;
-	text-align: center;
-	color: white;
-	font-weight: normal;
-	font-size: 2rem;
-	font-style: normal;
-	font-family: 'Merriweather', serif;
+h2 {
+text-align: center;
+color: white;
+padding: 1em;
+background-color: #dc8252;
+border-top: 1px solid #cd5b34;
+margin-bottom: 0;
+font-size: 1.2rem;
+clear: both;
 }
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	color: white;
-	overflow: hidden;
+.cereals, .quinoa {
+float: right;
+width: 31%;
+clear: right;
+margin: 7px;
+border: 1px solid #cccccc;
 }
-
-nav li {
-	display: block;
-	border: 1px #a33f3a solid;
-	float: left;
-	width: 33.33%;
-	background-color: #cd5b34;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	margin: 0;
+.corn img{
+width: 100%;
+display: block;
 }
-
-nav a {
-	display: block;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	margin: 0;
+.corn{
+margin: 0;
+width: 100%;
 }
-
-a:hover {
-	display: block;
-	background-color: #a93f35;
-	color: white;
+.corn figcaption {
+text-align: center;
+color: white;
+padding:.2em 0 .5em 0;
+background-color: #dc8252;
+font-style: italic;
+font-family: none, serif;
 }
-
-.first-img {
-	float: left;
-	width: 44%;
-	margin-right: 15px;
-	margin: 0em 0.5em 0em 0.5em;
-	border: 1px gray solid;
+.rice img{
+width: 100%;
+display: block;
 }
-
-.right {
-	float: right;
-	width: 44%;
-	margin-left: 15px;
-	border: 1px gray solid;
+.rice{
+margin:0;
+width: 50%;
+float: left;
 }
-
-.clear-it {
-	clear: left;
-	margin: 0.5em 0.5em 0.5em 0.5em;
+.rice figcaption {
+text-align: center;
+color: white;
+padding:.2em 0 .5em 0;
+background-color: #dc8252;
+border-bottom: 1px solid #cd5b34;
+font-style: italic;
+font-size: .8em;
+font-family: none, serif;
 }
-
-.clear-r{
-	clear: right;
-	margin: 0em 0.5em 0.5em 0.5em;
+.oats img{
+width: 100%;
+display:block;
 }
-
-.p1 {
-	margin: 1em 0em 0em 0.5em;
-
-}
-
-.p2 {
-	margin: 0.5em 0em 1em 0.5em;
-
-}
-
-.cereal {
-	clear: both;
-	text-align: center;
-	color: white;
-	background-color: #dc8252;
-	padding: 1em 0em 1em 0em;
-	margin: 0;
-	font-size: 1.2rem;
-}
-
-figure {
-	margin: 0;
-	padding: 0;
-}
-
-figcaption {
-	font-size: 0.7rem;
-	font-style: italic;
-	text-align: center;
-	color: white;
-	background-color: #dc8252;
-	padding: 0.2em 0em 0.5em 0em;
-	margin: 0;
-}
-
-.corn {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-.small-img {
-	display: block;
-	width: 100%;
-	margin: 0;
-
-}
-
-.small-img2 {
-	display: block;
-	width: 100%;
-	margin: 0;
-}
-
-.rice {
-	float: left;
-	font-size: 0.7rem;
-	font-style: italic;
-	color: white;
-	background-color: #dc8252;
-	padding: 0;
-	width: 50%;
-	margin: 0;
-}
-
 .oats {
-	float: right;
-	font-size: 0.7rem;
-	font-style: italic;
-	color: white;
-	background-color: #dc8252;
-	padding: 0;
-	width: 50%;
-	margin: 0;
+width: 50%;
+float: right;
+margin:0;
+}
+.oats figcaption {
+text-align: center;
+color: white;
+padding:.2em 0 .5em 0;
+background-color: #dc8252;
+border-bottom: 1px solid #cd5b34;
+font-style: italic;
+font-size: .8em;
+font-family: none, serif;
+}
+.legumes {
+background-color: white;
+border: none;
+color: #000;
+font-weight: bold;
+}
+.peanuts, .beans, .lentils {
+float: left;
+clear: left;
 }
 
-.famous {
-	clear: both;
-	text-align: center;
-	font-size: 1.2rem;
-	background-color: white;
-	color: black;
-	margin: 0;
-	padding: 1em 0em 0.5em 0em;
+.peanuts img, .beans img, .lentils img{
+width: 24%;
+float: left;
+margin: 0 7px 22px 7px;
+clear: left;
+border: 1px solid #cccccc;
+
 }
 
-.legume-img {
-	display: block;
-	width: 100%;
-	margin: 0.5em 0em 0.5em 0.5em;
-	border: 1px gray solid;
-	padding: 0;
+ul {
+		font-family: none, serif;
+		padding: 0;
 }
-
-.lentils {
-	display: block;
-	width: 100%;
-	margin: 0.5em 0em 1em 0.5em;
-	border: 1px gray solid;
-	padding: 0;
-}
-
-.left-imgs {
-	list-style-type: none;
-	width: 27%;
-	margin: 0;
-	float: left;
-	padding: 0;
-}
-
-.data {
-	list-style-type: none;
-	font-size: 0.9rem;
-	float: right;
-	font-style: italic;
-	margin: 0;
-	padding: 0.5em 0em 0em 0em;
-	width: 68%;
-}
-
-div li {
-	padding: 0em 0em 3.6em;
-}
-
-.second-data {
-	padding: 0em 0em 2.8em;
-}
-
 footer {
-	clear: both;
-	background-color: #cd5b34;
-	padding: 0.2em 0.5em 0.5em 0.5em;
-	margin: 0;
-	text-align: center;
-	color: #f59b6c;
-	font-weight: normal;
-	font-size: 0.6rem;
-	font-style: normal;
-	font-family: 'Merriweather', serif;
-	line-height: 1;
+  padding: .5em;
+  color: #dc8252;
+  background-color: #cd5b34;
+  clear: both;
+  text-align: center;
+  font-size: .75rem;
 }
